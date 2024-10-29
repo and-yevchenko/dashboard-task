@@ -1,0 +1,20 @@
+@function clm-rem($min, $width, $max) {
+  $min_rem: #{$min + rem};
+  $max_rem: #{$max + rem};
+  $width_vw: #{calc(round(($max * 16) / ($width / 100) * 100000) / 100000) + vw};
+  @return clamp($min_rem, $width_vw, $max_rem);
+}
+@function clm-px($min, $width, $max) {
+  $min_px: #{$min + px};
+  $max_px: #{$max + px};
+  $width_vw: #{calc(round($max / ($width / 100) * 100000) / 100000) + vw};
+  @return clamp($min_px, $width_vw, $max_px);
+}
+@function toRem($value) {
+  $remValue: ($value / 16) + rem;
+  @return $remValue;
+}
+@function toPx($value) {
+  $pxValue: ($value * 16) + rem;
+  @return $pxValue;
+}
