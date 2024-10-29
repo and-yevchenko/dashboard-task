@@ -1,0 +1,16 @@
+@import './components/logo.scss';
+@import './components/nav.scss';
+@import './components/user.scss';
+
+.sidebar {
+    max-width: 306px;
+    height: 100vh;
+    padding: toRem(40) toRem(28) toRem(76) toRem(28);
+    background-color: $color-white-100;
+    display: flex;
+    flex-direction: column;
+    gap: toRem(56);
+    &__nav {
+        flex: 1 auto;
+    }
+}

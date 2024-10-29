@@ -1,0 +1,27 @@
+.user {
+    display: flex;
+    gap: toRem(12);
+    background-color: transparent;
+    align-items: center;
+    padding: toRem(12);
+    transition: background 0.5s ease;
+    &:hover {
+        background-color: $color-input;
+        transition: background 0.5s ease;
+        border-radius: toRem(8);
+    }
+    &__img {
+        width: 42px;
+        height: 42px;
+        border-radius: 50%;
+    }
+    &__info {
+        text-align: start;
+    }
+    &__name {
+        @include mixins.textParams(toRem(14), $color-text-default, 500, 21px, 0.01rem)
+    }
+    &__position {
+        @include mixins.textParams(toRem(12), $color-grey-100, 400, 18px, 0.01rem)
+    }
+}
