@@ -2,11 +2,15 @@
 
 .content {
     flex: auto;
-    padding: toRem(40) toRem(72);
+    padding: toRem(40) clamp-rem(1, 1440, 4.5);
     display: flex;
     flex-direction: column;
     gap: toRem(52);
+    overflow-x: hidden;
     &__title{
         @include mixins.textParams(toRem(24), $color-text-default, 500, 36px, 0);
+    }
+    @media screen and (max-width: 1200px) {
+        align-items: center;
     }
 }
