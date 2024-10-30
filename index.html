@@ -10,12 +10,10 @@
   <body>
     <div id="app">
       <main class="main">
-
         <aside class="sidebar">
           <a class="logo" href="/" title="Dashboard">
             <img class="logo__img" src="logo.svg" alt="Logo">
             <span class="logo__title">Dashboard<span class="logo__version">v.01</span></span>
-            
           </a>
           <nav class="sidebar__nav nav">
             <ul class="nav__list">
@@ -71,8 +69,112 @@
             </div>
           </button>
         </aside>
-
-        
+        <article class="content">
+          <h1 class="content__title">Hello Evano 👋🏼,</h1>
+          <section class="customers">
+            <div class="customers__head">
+              <h2 class="customers__title">
+                <span>All Customers</span>
+                <span>Active Members</span>
+              </h2>
+              <div class="customers__search search">
+                <input class="search__input" type="text" placeholder="Search">
+                <img class="search__icon" src="/src/assets/icons/search.svg" alt="search">
+              </div>
+            </div>
+            <table class="customers__table table">
+              <thead>
+                <tr class="table__labels">
+                  <th>Customer Name</th>
+                  <th>Company</th>
+                  <th>Phone Number</th>
+                  <th>Email</th>
+                  <th>Country</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="table__item">
+                  <td>Jane Cooper</td>
+                  <td>Microsoft</td>
+                  <td><a href="tel:(225) 555-0118">(225) 555-0118</a></td>
+                  <td><a href="mailto:jane@microsoft.com">jane@microsoft.com</a></td>
+                  <td>United States</td>
+                  <td><div class="table__active">Active</div></td>
+                </tr>
+                <tr class="table__item">
+                  <td>Floyd Miles</td>
+                  <td>Yahoo</td>
+                  <td><a href="tel:(205) 555-0100">(205) 555-0100</a></td>
+                  <td><a href="mailto:floyd@yahoo.com">floyd@yahoo.com</a></td>
+                  <td>Kiribati</td>
+                  <td><div class="table__inactive">Inactive</div></td>
+                </tr>
+                <tr class="table__item">
+                  <td>Ronald Richards</td>
+                  <td>Adobe</td>
+                  <td><a href="tel:(302) 555-0107">(302) 555-0107</a></td>
+                  <td><a href="mailto:ronald@adobe.com">ronald@adobe.com</a></td>
+                  <td>Israel</td>
+                  <td><div class="table__inactive">Inactive</div></td>
+                </tr>
+                <tr class="table__item">
+                  <td>Marvin McKinney</td>
+                  <td>Tesla</td>
+                  <td><a href="tel:(252) 555-0126">(252) 555-0126</a></td>
+                  <td><a href="mailto:marvin@tesla.com">marvin@tesla.com</a></td>
+                  <td>Iran</td>
+                  <td><div class="table__active">Active</div></td>
+                </tr>
+                <tr class="table__item">
+                  <td>Jerome Bell</td>
+                  <td>Google</td>
+                  <td><a href="tel:(629) 555-0129">(629) 555-0129</a></td>
+                  <td><a href="mailto:jerome@google.com">jerome@google.com</a></td>
+                  <td>Réunion</td>
+                  <td><div class="table__active">Active</div></td>
+                </tr>
+                <tr class="table__item">
+                  <td>Kathryn Murphy</td>
+                  <td>Microsoft</td>
+                  <td><a href="tel:(406) 555-0120">(406) 555-0120</a></td>
+                  <td><a href="mailto:kathryn@microsoft.com">kathryn@microsoft.com</a></td>
+                  <td>Curaçao</td>
+                  <td><div class="table__active">Active</div></td>
+                </tr>
+                <tr class="table__item">
+                  <td>Jacob Jones</td>
+                  <td>Yahoo</td>
+                  <td><a href="tel:(208) 555-0112">(208) 555-0112</a></td>
+                  <td><a href="mailto:jacob@yahoo.com">jacob@yahoo.com</a></td>
+                  <td>Brazil</td>
+                  <td><div class="table__active">Active</div></td>
+                </tr>
+                <tr class="table__item">
+                  <td>Kristin Watson</td>
+                  <td>Facebook</td>
+                  <td><a href="tel:(704) 555-0127">(704) 555-0127</a></td>
+                  <td><a href="mailto:kristin@facebook.com">kristin@facebook.com</a></td>
+                  <td>Åland Islands</td>
+                  <td><div class="table__inactive">Inactive</div></td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="customers__foot">
+              <p class="customers__text">Showing data 1 to 8 of  256K entries</p>
+              <div class="customers__btns-page btns-page">
+                <button class="btns-page__btn" type="button">&#8249;</button>
+                <button class="btns-page__btn --active" type="button">1</button>
+                <button class="btns-page__btn" type="button">2</button>
+                <button class="btns-page__btn" type="button">3</button>
+                <button class="btns-page__btn" type="button">4</button>
+                <button class="btns-page__btn" type="button">...</button>
+                <button class="btns-page__btn" type="button">40</button>
+                <button class="btns-page__btn" type="button">&#8250;</button>
+              </div>
+            </div>
+          </section>
+        </article>
       </main>
     </div>
     <script type="module" src="./src/main.js"></script>

@@ -4,7 +4,7 @@
 
 .sidebar {
     max-width: 306px;
-    height: 100vh;
+    height: auto;
     padding: toRem(40) toRem(28) toRem(76) toRem(28);
     background-color: $color-white-100;
     display: flex;

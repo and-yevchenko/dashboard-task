@@ -1,0 +1,39 @@
+.table {
+    width: 100%;
+    padding: 0 toRem(38);
+    &__labels {
+        th {
+            &:not(:last-child) {text-align: start;}
+            padding: toRem(14) toRem(24);
+            border-bottom: 1px solid #EEEEEE;
+        }
+        :nth-child(n) {
+            @include mixins.textParams(toRem(14), $color-text-label, 500, 21px, 0);
+        }
+    }
+    &__item {
+        td {
+            padding: toRem(24);
+            border-bottom: 1px solid #EEEEEE;
+        }
+        :nth-child(n) {
+            @include mixins.textParams(toRem(14), $color-text-list, 500, 21px, 0);
+        }
+        .table__active {
+            padding: 0 toRem(18);
+            color: $color-green-400;
+            background-color: $color-green-100;
+            border-radius: toRem(4);
+            border: toRem(1) solid $color-green-300;
+            line-height: 2;
+        }
+        .table__inactive {
+            padding: 0 toRem(12);
+            color: $color-red-200;
+            background-color: $color-red-100;
+            border-radius: toRem(4);
+            border: toRem(1) solid $color-red-200;
+            line-height: 2;
+        }
+    }
+}

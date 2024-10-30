@@ -1,0 +1,24 @@
+.btns-page {
+    display: flex;
+    gap: toRem(12);
+    &__btn {
+        width: 24px;
+        height: 24px;
+        background-color: #F5F5F5;
+        border: toRem(1) solid #EEEEEE;
+        border-radius: toRem(4);
+        @include mixins.textParams(toRem(12), #404B52, 500, 2, 0);
+        transition: all 0.5s ease;
+        &.--active {
+            background-color: $color-accent;
+            border: toRem(1) solid $color-accent;
+            color: $color-white-100;
+            transition: all 0.5s ease;
+        }
+    }
+    :nth-child(6) {
+        background-color: transparent;
+        border: none;
+        pointer-events: none;
+    }
+}

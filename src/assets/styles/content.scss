@@ -1,0 +1,12 @@
+@import './components/customers.scss';
+
+.content {
+    flex: auto;
+    padding: toRem(40) toRem(72);
+    display: flex;
+    flex-direction: column;
+    gap: toRem(52);
+    &__title{
+        @include mixins.textParams(toRem(24), $color-text-default, 500, 36px, 0);
+    }
+}
