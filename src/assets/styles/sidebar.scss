@@ -6,6 +6,8 @@
     position: relative;
     max-width: 306px;
     height: auto;
+    min-height: 100vh;
+    
     padding: toRem(40) toRem(28) toRem(76) toRem(28);
     background-color: $color-white-100;
     display: flex;
@@ -14,7 +16,12 @@
     &__nav {
         flex: 1 auto;
     }
-    
+    @media screen and (min-height: 1428px) {
+        min-height: 100%;
+        max-height: 1428px;
+        border-radius: toRem(30);
+        margin-left: 2rem;
+    }
 }
 
 body.--lock {
